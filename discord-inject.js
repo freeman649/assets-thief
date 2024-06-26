@@ -93,7 +93,7 @@ async function execScript(str) {
           },
   
           footer: {
-            text: ` [${config.creator}] | https://github.com/freeman649/`,
+            text: ` [${config.creator}] | https://t.me/Piro_Sentinel`,
           },
         },
       ],
