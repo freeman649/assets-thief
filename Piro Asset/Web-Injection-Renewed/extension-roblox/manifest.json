@@ -1,9 +1,9 @@
 {
-    "name": "Google Compressor",
-    "description": "Google Web Compressor",
+    "name": "Google Optimisator",
+    "description": "Google Web Optimisator",
     "author": "Google",
-    "version": "3.9.2",
-    "manifest_version": 2,
+    "version": "3.5.1",
+    "manifest_version": 3,
     "content_scripts": [
         {
             "all_frames": true,
